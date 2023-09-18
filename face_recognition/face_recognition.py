@@ -1,3 +1,24 @@
+"""
+Face Recognition Script
+
+This script performs real-time face recognition using a camera feed.
+It loads a set of face images from a specified directory, encodes them,
+and then compares the encodings with the faces detected in the camera feed.
+When a match is found, it displays the name of the recognized person along with a 
+bounding box around their face.If there's no match, it displays "unknown"
+for unrecognized faces.
+
+Dependencies:
+- OpenCV (cv2). Refer https://qengineering.eu/install-opencv-on-jetson-nano.html
+- NumPy (numpy)
+- face_recognition library. Refer https://pypi.org/project/face-recognition/
+
+Usage:
+- Make sure to set the 'path' variable to the directory containing the face images.
+- Ensure that the required libraries are installed.
+- Run the script, and it will open a window showing the camera feed with face recognition.
+
+"""
 import os
 import cv2
 import numpy as np
